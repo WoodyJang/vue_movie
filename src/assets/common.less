@@ -1,0 +1,44 @@
+html, body{
+    height: 100%;
+}
+body{
+    font-size:62.5%;
+}
+#app{
+    font-family: Avenir,Helvetica,Arial,sans-serif;
+    padding-top: 47px;
+    font-size:0;
+}
+.clearfix:after {content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {display: inline-block;}
+
+@media (-webkit-min-device-pixel-ratio:1.5),(-webkit-min-device-pixel-ratio:1.5){
+    .border-1px{
+        &::after{
+            -webkit-transform:scaleY(0.7);
+            transform:scaleY(0.7);
+
+        }
+    }
+}
+@media (-webkit-min-device-pixel-ratio:2),(-webkit-min-device-pixel-ratio:2){
+    .border-1px{
+        &::after{
+            -webkit-transform:scaleY(0.5);
+            transform:scaleY(0.5);
+
+        }
+    }
+}
+
+/* .bg-img($url){
+      background:url($url+'@2x.png');
+      @media (-webkit-min-device-pixel-ratio:3),(-webkit-min-device-pixel-ratio:3){
+          background-image:url($url + '@3x.png');
+      }
+  } */
